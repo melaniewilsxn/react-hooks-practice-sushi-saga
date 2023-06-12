@@ -1,7 +1,12 @@
 import React from "react";
 
-function MoreButton(props) {
-  return <button onClick={/* Fill me in! */ null}>More sushi!</button>;
+function MoreButton({ min, setMin, max, setMax}) {
+
+  function handleClick(){
+    setMin(min+4)
+    setMax(max+4)
+  }
+  return <button onClick={handleClick}>More sushi!</button>;
 }
 
 export default MoreButton;
